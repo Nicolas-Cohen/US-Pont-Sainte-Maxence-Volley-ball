@@ -1,0 +1,92 @@
+
+/* MENU */
+.link-shop {
+    color: #FFA500;
+}
+
+/* HEADER */
+.logo-index {
+    width: 200px;
+}
+
+/* BANNER */
+#banner {
+    height: 100vh;
+}
+
+/* CLUB */
+.cards-club {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    margin: 0;
+}
+
+.img-club {
+    margin-bottom: 30px;
+}
+
+.card-club {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.subtitle-club {
+    font-size: 15px;
+}
+
+.club-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 1200px) {
+    .cards-club {
+        gap: 150px;
+    }
+} 
+
+@media (max-width: 900px) {
+    .cards-club {
+        gap: 80px;
+    }
+} 
+
+@media (max-width: 770px) {
+    .cards-club {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* FOOTER */
+.link-legal {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.link-legal:hover {
+   color: white;
+}
+
+.link-webgencia:hover {
+    color: white;
+ }
+
+.copyright {
+    margin-top: 30px;
+}
+
+@media (max-width: 770px) {
+    .link-legal {
+        font-size: 12px;
+    }
+    
+}
