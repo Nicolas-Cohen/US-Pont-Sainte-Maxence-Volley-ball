@@ -1,131 +1,199 @@
-
 /* MENU */
 .link-shop {
-    color: #FFA500;
+  color: #ffa500;
 }
 
 /* HEADER */
 .logo-index {
-    width: 200px;
+  width: 200px;
 }
 
 /* BANNER */
 #banner {
-    height: 100vh;
+  height: 100vh;
 }
 
 /* CLUB */
 .cards-club {
-    display: flex;
-    justify-content: center;
-    gap: 350px;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 350px;
+  margin: 0;
 }
 
 .img-club {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .card-club {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 
 .subtitle-club {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .club-stats {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
 @media (max-width: 1200px) {
-    .cards-club {
-        gap: 150px;
-    }
-} 
+  .cards-club {
+    gap: 150px;
+  }
+}
 
 @media (max-width: 900px) {
-    .cards-club {
-        gap: 80px;
-    }
-} 
+  .cards-club {
+    gap: 80px;
+  }
+}
 
 @media (max-width: 770px) {
-    .cards-club {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .cards-club {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 /* FOOTER */
 .link-legal {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.8em;
-    letter-spacing: 0.225em;
-    list-style: none;
-    padding: 0;
-    text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+  letter-spacing: 0.225em;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .link-legal:hover {
-   color: white;
+  color: white;
 }
 
 .link-webgencia:hover {
-    color: white;
- }
+  color: white;
+}
 
 .copyright {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media (max-width: 770px) {
-    .link-legal {
-        font-size: 12px;
-    }
-    
+  .link-legal {
+    font-size: 12px;
+  }
 }
 
 /* PAGE LEGAL */
 .legal {
-    padding: 50px 1.5em;
-    color: #2e3842;
-    background-color: white;
+  padding: 50px 1.5em;
+  color: #2e3842;
+  background-color: white;
 }
 
-.legal > h2,h3 {
-    color: #2e3842;
+.legal > h2,
+h3 {
+  color: #2e3842;
 }
 
 /* PAGE CONTACT */
 .title-page-webgencia {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 #form-message {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .socials-contact {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .social-contact {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .social-contact > p {
-    margin: 0;
+  margin: 0;
+}
+
+/* PAGE SHOP */
+.cards-shop {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: auto;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+.back-img-product {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(231, 231, 231);
+  padding: 40px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-product {
+  width: 100%;
+  margin: auto;
+}
+
+.img-gourd {
+  width: 100px;
+}
+
+.description-product {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 5px;
+}
+
+.description-product > p {
+  margin: 0;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1100px) {
+  .cards-shop {
+    width: 630px;
+  }
+}
+
+@media (max-width: 690px) {
+  .cards-shop {
+    width: 100%;
+  }
+
+  .card-product {
+    width: 100%;
+  }
 }
