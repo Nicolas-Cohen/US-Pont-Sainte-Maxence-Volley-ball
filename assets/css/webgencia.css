@@ -90,3 +90,42 @@
     }
     
 }
+
+/* PAGE LEGAL */
+.legal {
+    padding: 50px 1.5em;
+    color: #2e3842;
+    background-color: white;
+}
+
+.legal > h2,h3 {
+    color: #2e3842;
+}
+
+/* PAGE CONTACT */
+.title-page-webgencia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#form-message {
+    margin-top: 10px;
+}
+
+.socials-contact {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.social-contact {
+    display: flex;
+    gap: 10px;
+}
+
+.social-contact > p {
+    margin: 0;
+}

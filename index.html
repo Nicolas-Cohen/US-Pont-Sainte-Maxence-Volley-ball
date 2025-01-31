@@ -5,13 +5,17 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-
-
-
+	<!-- Start favicon -->
+	<link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="./images/favicon//favicon.svg" />
+	<link rel="shortcut icon" href="./images/favicon//favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="PSM Volley" />
+	<link rel="manifest" href="./images/favicon//site.webmanifest" />
+	<!-- End favicon -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>US Pont-Sainte-Maxence Volley-ball</title>
-	<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/webgencia.css" />
 	<meta name="description"
@@ -19,7 +23,7 @@
 	<script src="https://kit.fontawesome.com/7d6b460f7a.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="landing is-preload">
+<body class="landing">
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
@@ -33,7 +37,7 @@
 						<a href="#menu" class="menuToggle"><span>Menu</span></a>
 						<div id="menu">
 							<ul>
-								<li><a href="index.html">Accueil</a></li>
+								<li><a href="#banner">Accueil</a></li>
 								<li><a href="#club">Club</a></li>
 								<li><a href="#team-senior">Senior masculin</a></li>
 								<li><a href="#team-m18">M18 Féminin</a></li>
@@ -74,7 +78,7 @@
 						<img src="./images/ball.webp" alt="Ballon de volley-ball" class="img-club">
 						<h3 class="subtitle-club">Le club, c'est</h3>
 						<ul class="club-stats" aria-label="Statistiques du club">
-							<li><strong>45</strong> saisons consécutives en compétion</li>
+							<li><strong>45</strong> saisons consécutives en compétition</li>
 							<li><strong>42</strong> ballons d’entraînement</li>
 							<li><strong>1</strong> grande famille de passionnés</li>
 						</ul>
@@ -98,21 +102,26 @@
 				<div class="image"><img src="images/senior.webp" alt="" /></div>
 				<div class="content">
 					<h2>Équipe senior masculine</h2>
-					<p>L'équipe évolue en championnat <strong>interdépartemental</strong>, affrontant des clubs des départements voisins dans une ambiance compétitive et conviviale.</p>
+					<p>L'équipe évolue en championnat <strong>interdépartemental</strong>, affrontant des clubs des
+						départements voisins dans une ambiance compétitive et conviviale.</p>
 				</div>
 			</section>
 			<section id="team-m18" class="spotlight">
 				<div class="image"><img src="images/M18.webp" alt="" /></div>
 				<div class="content">
 					<h2>Équipe M18 féminine</h2>
-					<p>Pour leur toute première saison, nos joueuses M18 évoluent directement en championnat <strong>régional</strong>. Une belle opportunité pour cette jeune équipe de progresser et de relever de nouveaux défis !</p>
+					<p>Pour leur toute première saison, nos joueuses M18 évoluent directement en championnat
+						<strong>régional</strong>. Une belle opportunité pour cette jeune équipe de progresser et de
+						relever de nouveaux défis !</p>
 				</div>
 			</section>
 			<section id="leisure" class="spotlight">
 				<div class="image"><img src="images/loisir.webp" alt="" /></div>
 				<div class="content">
 					<h2>Loisir</h2>
-					<p>Une équipe ouverte à tous, où plaisir et convivialité priment sur la compétition ! Débutant ou joueur confirmé, cette catégorie permet de passer de bons moments autour du volley, sans pression de championnat.</p>
+					<p>Une équipe ouverte à tous, où plaisir et convivialité priment sur la compétition ! Débutant ou
+						joueur confirmé, cette catégorie permet de passer de bons moments autour du volley, sans
+						pression de championnat.</p>
 				</div>
 			</section>
 		</section>
@@ -165,7 +174,7 @@
 			<div class="inner">
 				<header>
 					<h2>Rejoignez-nous</h2>
-					<p>Contactez-nous ou explorez notre boutique <br/>pour nos offres exclusives.</p>
+					<p>Contactez-nous ou explorez notre boutique <br />pour nos offres exclusives.</p>
 				</header>
 				<ul class="actions stacked">
 					<li><a href="./contact.html" class="button fit primary">Contact</a></li>
@@ -186,8 +195,8 @@
 			<a href="./mentions-legales.html" class="link-legal">MENTIONS LÉGALES</a>
 			<p class="copyright">
 				&copy; 2025 US PONT SAINTE-MAXENCE VOLLEY-BALL<br />
-				Une réalisation : <a href="https://www.webgencia.fr/" target="_blank"
-					rel="noopener noreferrer" class="link-webgencia">Webgencia</a>
+				Une réalisation <a href="https://www.webgencia.fr/" target="_blank" rel="noopener noreferrer"
+					class="link-webgencia">Webgencia</a>
 			</p>
 		</footer>
 
@@ -201,6 +210,42 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script>
+	
+	document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menuToggle");
+    const menu = document.querySelector("#menu");
+
+    if (menuToggle && menu) {
+        menuToggle.addEventListener("click", function (e) {
+            e.preventDefault(); // 🔥 Empêche le saut en haut de page
+            menu.classList.toggle("active");
+        });
+    }
+
+    // Scroll fluide sur les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+
+            // On ignore les liens du menuToggle
+            if (targetId === "#menu") return;
+
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+	</script>
 
 </body>
 
