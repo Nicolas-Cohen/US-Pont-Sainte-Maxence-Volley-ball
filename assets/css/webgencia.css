@@ -13,6 +13,12 @@
   height: 100vh;
 }
 
+@media (max-width: 736px) {
+  .subtitle-hero {
+    white-space: pre-line;
+  }
+}
+
 /* CLUB */
 .cards-club {
   display: flex;
